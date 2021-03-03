@@ -1,3 +1,4 @@
+/*fading effect*/
 .transition-1 {
     position: fixed;
     top: 0;
@@ -9,9 +10,41 @@
     opacity: 0;
     pointer-events: none;
     transition: 0.5s ease-out;
-  }
-  
-  .transition-1.is-active {
+}
+
+.transition-1.is-active {
     pointer-events: all;
     opacity: 1;
-  }
+}
+
+/*sliding effect*/
+.transition-2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 101;
+    background-color: aquamarine;
+    transition: .5s ease-out;
+}
+
+.transition-2.is-active {
+    left: 0px;
+}
+
+/*come in from top*/
+.transition-3 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 101;
+    background-color: aquamarine;
+    transition: .5s ease-out;
+}
+
+.transition-3.is-active {
+    top: 0;
+}
