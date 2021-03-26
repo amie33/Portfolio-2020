@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
-    <div class="transition transition-2 is-active"></div>
+    <!--Transition stuff-->
+    <div class="transition transition-1 is-active">
+        <div class='bubblegum' id='bubblegum'>
+            <img src="./img/bubblegum2.gif">
+            <p class='dance'> Collecting my thoughts..might take a moment... </p>
+        </div>
+    </div>
 
     <div class="page">
         <header> 
             <nav>
                 <ul> 
-                    <li class="menu-item is-active"><a href="index.html">Amie N. Jensen</a></li>
+                    <div class="name"><li class="menu-item"><a href="index.html">Amie N. Jensen</a></li></div>
                     <li class="menu-item"><a href="about.html">About</a></li>
                     <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
                     <li class="menu-item"><a href="resume.html">Resume</a></li>
@@ -25,7 +32,8 @@
         <p> lorem ipsum </p>
     </main>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src='script.js'></script>
-
+    
 </body>
 </html>

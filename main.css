@@ -1,4 +1,6 @@
-/*fading effect*/
+/*
+Transitions:
+fading effect*/
 .transition-1 {
     position: fixed;
     top: 0;
@@ -9,7 +11,7 @@
     background-color: aquamarine;
     opacity: 0;
     pointer-events: none;
-    transition: 0.5s ease-out;
+    transition: 10s ease-out;
 }
 
 .transition-1.is-active {
@@ -17,7 +19,7 @@
     opacity: 1;
 }
 
-/*sliding effect*/
+/*sliding effect left*/
 .transition-2 {
     position: fixed;
     top: 0;
@@ -47,4 +49,26 @@
 
 .transition-3.is-active {
     top: 0;
+}
+
+/*slide in right*/
+.transition-4{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 101;
+    background-color: aquamarine;
+    transition: .5s ease-out;
+}
+
+.transition-4.is-active {
+    right: 0px;
+}
+
+/*Preloader page*/
+.bubblegum{
+    text-align: center;
+    padding-top: 15%;
 }
