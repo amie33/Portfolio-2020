@@ -3,18 +3,11 @@ window.onload = () => {
 
     const transitionElement = document.querySelector('.transition');//reference to transitions
     const anchors = document.querySelectorAll('a');//grab all links on the page
-    const bubbleGum = document.getElementById('bubblegum');//get the bubblegum div
+   
 
     setTimeout(() => {
         transitionElement.classList.remove('is-active');
-    }, 550); //get the transition div and remove it if present
-
-    if(sessionStorage.bubbleGum = !true){
-        sessionStorage.bubbleGum = true;
-        bubbleGum.style.display = 'block';
-    }else{
-        bubbleGum.style.display = 'none';
-    }
+    }, 500); //get the transition div and remove it if present
 
     //loop through the anchors(links) on the page
     for(let i = 0; i < anchors.length; i++){
@@ -33,3 +26,21 @@ window.onload = () => {
         });
     }
 }
+
+//create a constant for the bubblegum div then use sessionstorage to set the session to true and if it displays more than once it's visibility will be hidden.
+const bubbleGum = document.getElementById('bubblegum');//get the bubblegum div
+function showBG(){
+    //set the sessionStorageitem to true
+    sessionStorage.setItem(bubbleGum, true);
+    console.log(sessionStorage);
+    if(sessionStorage.length > 1){
+        bubbleGum.style.display = 'none';
+    }
+}  
+showBG(); 
+// if(sessionStorage.bubbleGum = !true){
+//     sessionStorage.bubbleGum = true;
+//     bubbleGum.style.display = 'block';
+// }else{
+//     bubbleGum.style.display = 'none';
+// }
