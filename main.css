@@ -1,3 +1,7 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
 /*
 Transitions:
 fading effect*/
@@ -72,3 +76,29 @@ fading effect*/
     text-align: center;
     padding-top: 15%;
 }
+
+/*navigation bar*/ 
+ul{
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    list-style-type: none;
+}
+li{
+    float: right; 
+}
+li a {
+    display: block; 
+    color: hotpink; 
+    text-align: center;
+    padding: 20px 55px;/*height width*/  
+    text-decoration: none;
+    font-family: 'Lacquer', cursive;
+    font-size: 20px; 
+}
+/*anchor for my name*/ 
+.name{
+    float: left;
+}
+

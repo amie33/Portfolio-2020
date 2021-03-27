@@ -3,7 +3,6 @@ window.onload = () => {
 
     const transitionElement = document.querySelector('.transition');//reference to transitions
     const anchors = document.querySelectorAll('a');//grab all links on the page
-   
 
     setTimeout(() => {
         transitionElement.classList.remove('is-active');
@@ -25,19 +24,28 @@ window.onload = () => {
                     
         });
     }
-}
+//     const bubbleGum = document.getElementById('bubblegum');
+//     if(!sessionStorage.getItem('doNotshow')){
+//         sessionStorage.setItem('doNotshow', true);
+//     }else{
+//         bubbleGum.remove();
+//     }
+ }
+
 
 //create a constant for the bubblegum div then use sessionstorage to set the session to true and if it displays more than once it's visibility will be hidden.
+
 const bubbleGum = document.getElementById('bubblegum');//get the bubblegum div
-function showBG(){
-    //set the sessionStorageitem to true
-    sessionStorage.setItem(bubbleGum, true);
-    console.log(sessionStorage);
-    if(sessionStorage.length > 1){
-        bubbleGum.style.display = 'none';
-    }
-}  
-showBG(); 
+    
+// function showBG(){
+//     //set the sessionStorageitem to true
+//     sessionStorage.setItem('bg', bubbleGum, true);
+//     console.log(sessionStorage);
+//     if(sessionStorage.length > 1){
+//         bubbleGum.remove(); 
+//     }
+// }  
+// showBG(); 
 // if(sessionStorage.bubbleGum = !true){
 //     sessionStorage.bubbleGum = true;
 //     bubbleGum.style.display = 'block';
